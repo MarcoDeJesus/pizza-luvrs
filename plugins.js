@@ -80,5 +80,6 @@ module.exports.register = async server => {
   server.auth.default('session')
 
   // setup data
-  mockData.hydrate()
+  // This line has been commented in order to avoid populating Databases at AWS every time we start the project.
+  // mockData.hydrate()
 }
